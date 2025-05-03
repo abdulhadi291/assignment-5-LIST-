@@ -79,10 +79,21 @@
 //---------------------------------------------------------------------------------
 
 // Q7
+// void main() {
+//   List myList = [10, 12, -5, 3, -2, 0, 8, -9];
+
+//   List positiveList = myList.where((number) => number > 0).toList();
+
+//   print(positiveList);
+// }
+
+//---------------------------------------------------------------------------------
+
+// Q8
 void main() {
-  List myList = [10, 12, -5, 3, -2, 0, 8, -9];
+  List usersEligibility = ['John', 'Alice', 'eligible', 'Mike', 'Sarah', 'Tom'];
 
-  List positiveList = myList.where((number) => number > 0).toList();
-
-  print(positiveList);
+  List eligibleUsers =
+      usersEligibility.where((user) => user == 'eligible').toList();
+  print(eligibleUsers);
 }
