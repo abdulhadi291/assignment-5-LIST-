@@ -55,11 +55,23 @@
 //---------------------------------------------------------------------------------
 
 // Q5
+// void main() {
+//   List numbers = [4, 17, 9, 22, 13, 6];
+
+//   numbers.sort();
+
+//   print(numbers);
+//   print("maximum value is ${numbers[5]}");
+// }
+
+//---------------------------------------------------------------------------------
+
+// Q6
+
 void main() {
-  List numbers = [4, 17, 9, 22, 13, 6];
+  List originalList = ['Hadi', 'Ahmed', 'Abdullah', 'Ali'];
 
-  numbers.sort();
-
-  print(numbers);
-  print("maximum value is ${numbers[5]}");
+  List newList = originalList.reversed.toList();
+  print(" Original List $originalList");
+  print("New List is $newList");
 }
