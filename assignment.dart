@@ -102,16 +102,34 @@
 
 // Q9
 
+// void main() {
+//   Map car = {
+//     'brand': 'Toyota',
+//     'color': 'Reid',
+//     'isSedan': true,
+//   };
+
+//   if (car['isSedan'] == true && car['color'] == 'Red') {
+//     print('Match');
+//   } else {
+//     print('No match');
+//   }
+// }
+
+//---------------------------------------------------------------------------------
+
+// Q10
+
 void main() {
-  Map car = {
-    'brand': 'Toyota',
-    'color': 'Reid',
-    'isSedan': true,
+  Map user = {
+    'name': 'John Doe',
+    'isAdmin': true,
+    'isActive': true,
   };
 
-  if (car['isSedan'] == true && car['color'] == 'Red') {
-    print('Match');
+  if (user['isAdmin'] == true && user['isActive'] == true) {
+    print('Active admin');
   } else {
-    print('No match');
+    print('Not an active admin');
   }
 }
