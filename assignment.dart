@@ -68,10 +68,21 @@
 
 // Q6
 
-void main() {
-  List originalList = ['Hadi', 'Ahmed', 'Abdullah', 'Ali'];
+// void main() {
+//   List originalList = ['Hadi', 'Ahmed', 'Abdullah', 'Ali'];
 
-  List newList = originalList.reversed.toList();
-  print(" Original List $originalList");
-  print("New List is $newList");
+//   List newList = originalList.reversed.toList();
+//   print(" Original List $originalList");
+//   print("New List is $newList");
+// }
+
+//---------------------------------------------------------------------------------
+
+// Q7
+void main() {
+  List myList = [10, 12, -5, 3, -2, 0, 8, -9];
+
+  List positiveList = myList.where((number) => number > 0).toList();
+
+  print(positiveList);
 }
