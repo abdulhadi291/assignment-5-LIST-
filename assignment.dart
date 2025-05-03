@@ -90,10 +90,28 @@
 //---------------------------------------------------------------------------------
 
 // Q8
-void main() {
-  List usersEligibility = ['John', 'Alice', 'eligible', 'Mike', 'Sarah', 'Tom'];
+// void main() {
+//   List usersEligibility = ['John', 'Alice', 'eligible', 'Mike', 'Sarah', 'Tom'];
 
-  List eligibleUsers =
-      usersEligibility.where((user) => user == 'eligible').toList();
-  print(eligibleUsers);
+//   List eligibleUsers =
+//       usersEligibility.where((user) => user == 'eligible').toList();
+//   print(eligibleUsers);
+// }
+
+//---------------------------------------------------------------------------------
+
+// Q9
+
+void main() {
+  Map car = {
+    'brand': 'Toyota',
+    'color': 'Reid',
+    'isSedan': true,
+  };
+
+  if (car['isSedan'] == true && car['color'] == 'Red') {
+    print('Match');
+  } else {
+    print('No match');
+  }
 }
